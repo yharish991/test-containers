@@ -52,5 +52,12 @@ public class DemoApplicationTests {
         assertThat(entity.getStatusCode()).isEqualTo(HttpStatus.OK);
         assertThat(entity.getBody()).contains("\"status\":\"UP\"");
     }
+    
+    @Test
+    public void testLivenessEndpoint() {
+        ResponseEntity<String> entity = this.restTemplate.getForEntity("/rest/v1/books", String.class);
+        assertThat(entity.getStatusCode()).isEqualTo(HttpStatus.OK);
+        assertThat(entity.getBody()).contains("[{\"id\":1,\"name\":\"In Search of Lost Time\"},{\"id\":2,\"name\":\"Ulysses\"},{\"id\":3,\"name\":\"Don Quixote\"}]");
+    }
 
 }

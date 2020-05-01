@@ -1,0 +1,14 @@
+-------------------------------------------------------------------------------
+Test set: com.example.demo.DemoApplicationTests
+-------------------------------------------------------------------------------
+Tests run: 2, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 13.854 s <<< FAILURE! - in com.example.demo.DemoApplicationTests
+testLivenessEndpoint  Time elapsed: 0.06 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: 
+
+Expecting:
+ <404 NOT_FOUND>
+to be equal to:
+ <200 OK>
+but was not.
+	at com.example.demo.DemoApplicationTests.testLivenessEndpoint(DemoApplicationTests.java:59)
+
