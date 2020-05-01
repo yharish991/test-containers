@@ -1,2 +1,2 @@
 # test-containers
-Testcontainers sample
+Testcontainers spring-boot sample
